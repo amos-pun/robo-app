@@ -1,4 +1,4 @@
-I have deployed this web app in URL. <br>
+This web app has been deployed to URL. <br>
 Go live --
 
 https://amos-pun.github.io/robo-app/

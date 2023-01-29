@@ -1,16 +1,22 @@
-import React from 'react'
+import React from "react";
 
-const SearchBox = () => {
+const SearchBox = ({ searchChange }) => {
   return (
-    <div className='text-center'>
-        <form className='d-flex justify-content-evenly'>
+    <div className="text-center">
+      <form className="d-flex justify-content-evenly">
         <div className="form-floating w-50">
-            <input type="email" className="form-control border border-4" id="floatingInput" placeholder="enter name"/>
-            <label htmlFor="floatingInput">Enter Name</label>
+          <input
+            type="email"
+            className="form-control border border-4"
+            id="floatingInput"
+            placeholder="enter name"
+            onChange={searchChange}
+          />
+          <label htmlFor="floatingInput">Enter Name</label>
         </div>
-        </form>
+      </form>
     </div>
-  )
-}
+  );
+};
 
-export default SearchBox
+export default SearchBox;
